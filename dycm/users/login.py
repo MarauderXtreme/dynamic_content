@@ -48,7 +48,7 @@ class LoginHook(hooks.ClassHook):
 
     hook_name = 'login'
 
-    def handle_form(self, form):
+    def handle_form(self, form: csrf.SecureForm):
         """
         Alter the html form that is used for the login process.
 
@@ -61,7 +61,7 @@ class LoginHook(hooks.ClassHook):
         """
         raise NotImplementedError
 
-    def handle_login_request(self, query):
+    def handle_login_request(self, query: dict):
         """
         Take action based on the query received with the login POST request
 

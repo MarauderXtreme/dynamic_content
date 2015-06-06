@@ -54,3 +54,7 @@ project_dir: 'testapp'
 
 # 0:FULL, 1:STANDARD, 2:FRAMEWORK
 distribution: 0
+
+# Get your API-Key from https://upgrade.yubico.com/getapikey/
+yubikey_id: ''
+yubikey_key: ''
